@@ -8,12 +8,12 @@
         Title="MainWindow" Height="600" Width="1000">
     <Grid>
         <Button x:Name="queryButton" Content="QueryButton" HorizontalAlignment="Left" Margin="893,501,0,0" VerticalAlignment="Top" Width="75" Click="queryButton_Click"/>
-        <Button x:Name="trainButton" Content="TrainButton" HorizontalAlignment="Left" Margin="893,450,0,0" VerticalAlignment="Top" Width="75" Click="trainButton_Click" IsEnabled="False"/>
+        <Button x:Name="trainButton" Content="TrainButton" HorizontalAlignment="Left" Margin="893,450,0,0" VerticalAlignment="Top" Width="75" Click="trainButton_Click" />
         <Button x:Name="createButton" Content="CreateButton" HorizontalAlignment="Left" Margin="893,400,0,0" VerticalAlignment="Top" Width="75" Click="createButton_Click"/>
         <TextBox x:Name="outputTextBox" HorizontalAlignment="Left" Height="23" Margin="893,300,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="75" PreviewTextInput="outputTextBox_PreviewTextInput"/>
         <TextBox x:Name="hiddenTextBox" HorizontalAlignment="Left" Height="23" Margin="893,250,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="75" PreviewTextInput="hiddenTextBox_PreviewTextInput"/>
         <TextBox x:Name="inputTextBox" HorizontalAlignment="Left" Height="23" Margin="893,200,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="75" PreviewTextInput="inputTextBox_PreviewTextInput"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="893,150,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="893,150,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75" TextChanged="TextBox_TextChanged"/>
         <DataGrid x:Name="networkDataGrid" CanUserAddRows ="True" ItemsSource="{Binding newRow}" HorizontalAlignment="Left" Height="550" Margin="10,10,0,0" VerticalAlignment="Top" Width="800">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="InputLayer" Binding="{Binding inputValue}"/>
